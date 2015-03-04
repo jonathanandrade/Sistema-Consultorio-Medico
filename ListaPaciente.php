@@ -14,6 +14,7 @@
 <th>ENDEREÇO</th>
 <th>NUM</th>
 <th>UF</th>
+<th>CONSULTA</th>
 <th>#</th>
 <th>#</th>
 	<?php
@@ -30,13 +31,14 @@
 			<td><?= $paciente['endereco'] ?> </td>
 			<td><?= $paciente['numero'] ?> </td>
 			<td><?= $paciente['sigla'] ?> </td>
+			<td><a href="CadastroConsulta.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-warning">Consulta</a> </td>
 			<td><a href="AlteraPacienteFormulario.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-primary">Alterar</a></td>
 			<td>
 				<form action="RemovePaciente.php" method="post">
 					<input type="hidden" name="id_paciente" value="<?=$paciente['id_paciente']?>">
-					<button class="btn btn-danger">Remover</a>
+					<button class="btn btn-danger">Remover</a>					
 				</form>
-			</td>			
+			</td>	
 		</tr>
 	<?php
 		}

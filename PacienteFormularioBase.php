@@ -4,7 +4,7 @@
 </tr>
 <tr>
 	<td><label>Nome:</label></td>
-	<td><input type="text" name="nome" class="form-control" value="<?=$paciente['nome']?>"></td>
+	<td width="80%"><input type="text" name="nome" class="form-control" value="<?=$paciente['nome']?>"></td>
 </tr>
 <tr>
 	<td><label>Idade:</label></td>
@@ -13,8 +13,8 @@
 <tr>
 	<td><label>Sexo:</label></td>
 	<td>
-		<input type="radio" name="sexo" value="M" checked="checked">Masculino <br/>
-		<input type="radio" name="sexo" value="F">Feminino
+		<input type="radio" name="sexo" value="M" <?php echo ($paciente['sexo'] == "M") ? "checked" : null; ?> >Masculino <br/>
+		<input type="radio" name="sexo" value="F" <?php echo ($paciente['sexo'] == "F") ? "checked" : null; ?> >Feminino
 	</td>
 </tr>
 <tr>

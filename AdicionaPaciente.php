@@ -20,7 +20,7 @@
 	}
 	
 	inserePaciente($conexao, $nome, $idade, $id_estado, $ativo, $email, $telefone, $endereco, $numero, $sexo);
-    $_SESSION['success'] = "Produto adicionado com sucesso.";
+    $_SESSION['success'] = "Paciente adicionado com sucesso.";
     header("Location:CadastroPaciente.php");
 	die();
 ?>	

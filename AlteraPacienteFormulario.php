@@ -15,10 +15,13 @@
 	<form action="AlteraPaciente.php" method="post">
 		<table class="table">
 			
-		<?php include('ProdutoFormularioBase.php') ?>
+		<?php include('PacienteFormularioBase.php') ?>
 
 			<tr>
-				<td><input type="submit" value="Alterar" class="btn btn-primary"> <br/></td>
+				<td>
+					<input type="submit" value="Alterar" class="btn btn-primary">
+				    <a href="ListaPaciente.php" class="btn btn-warning">Voltar</a>
+				</td>
 			</tr>			
 		</table>
 	</form>

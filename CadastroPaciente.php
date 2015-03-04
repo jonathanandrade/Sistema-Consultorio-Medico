@@ -12,10 +12,10 @@
 	<form action="AdicionaPaciente.php" method="post">
 		<table class="table">
 			
-			<?php include('ProdutoFormularioBase.php') ?>
+			<?php include('PacienteFormularioBase.php') ?>
 
 			<tr>
-				<td><input type="submit" value="Cadastrar" class="btn btn-primary"> <br/></td>
+				<td><input type="submit" value="Cadastrar" class="btn btn-primary btn-lg btn-block"> <br/></td>				
 			</tr>			
 		</table>
 	</form>

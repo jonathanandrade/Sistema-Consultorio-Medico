@@ -10,7 +10,7 @@
 	  } else {
 	  	$_SESSION['success'] = "Usuário logado com sucesso..";
 	  	logaUsuario($usuario['login']);
-	  	header("Location: index.php?");
+	  	header("Location: ListaConsultas.php?");
 	  }
 
 	  die();
