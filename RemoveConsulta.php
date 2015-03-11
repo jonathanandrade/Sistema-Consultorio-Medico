@@ -4,7 +4,7 @@
       
     verificaUsuario();
 
-    $id_consulta = $_POST['id_consulta'];
+    $id_consulta = $_GET['id_consulta'];
     removeConsulta($conexao, $id_consulta);
     $_SESSION['success'] = "Consulta removida com sucesso.";
 

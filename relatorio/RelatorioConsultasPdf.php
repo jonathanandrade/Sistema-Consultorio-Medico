@@ -1,17 +1,20 @@
 <?php 
 	include("fpdf/fpdf.php");
-	require("../conectar.php");	 
+	require("../conectar.php");	
 
 	$consultas = array();
 	
+	$logotipo = "../images/home_logo.png"; // Caminho da imagem
 	$titulo = "Relatorio de Consultas";  // Título do relatorio
 	$data=date("d/m/Y H:i:s"); 			//pegando data e hora da criação do PDF
-	
+
 	$pdf = new FPDF('P','cm','A4'); 	// (P = Retrato ou L = Paisagem; Tipo de medida, Tipo de pagina)
 	$pdf->Open(); 						// Abrindo o FPDF
 	$pdf->AddPage(); 					// Adicionando uma página
 	$pdf-> SetFont('Arial','B',18); 	// Definindo fonte
 	$pdf->Cell(13,1,$titulo,0,0, 'R');  // Incluindo uma célula
+
+	$pdf->Image($logotipo,5,10,"png");  // Incluindo imagem
 
 	$pdf->Ln(1); 						// Pulando linha
 	$pdf-> SetFont('Arial','',12);

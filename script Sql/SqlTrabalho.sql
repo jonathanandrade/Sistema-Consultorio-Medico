@@ -11,7 +11,6 @@ CREATE TABLE  `aula`.`paciente` (
   `endereco` varchar(50),
   `id_estado` int,
   `numero` int,
-  `id_consulta` int,
   `ativo` char(1),
   PRIMARY KEY (`id_paciente`)
 ) 
@@ -57,6 +56,7 @@ CREATE TABLE  `aula`.`consulta` (
   `data_consulta` date,
   `hora` varchar(5),
   `atendida` varchar(1),
+  `observacao` varchar(100),
   PRIMARY KEY (`id_consulta`)
 ) 
 ENGINE=InnoDB;
@@ -70,7 +70,7 @@ CREATE TABLE  `aula`.`estado` (
 ) 
 ENGINE=InnoDB;
 
-INSERT INTO `estado` (`descricao`, `sigla`) VALUES
+INSERT INTO `aula.estado` (`descricao`, `sigla`) VALUES
 ('Acre', 'AC'),
 ('Alagoas', 'AL'),
 ('Amazonas', 'AM'),

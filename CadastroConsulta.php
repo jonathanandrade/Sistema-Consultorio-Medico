@@ -25,11 +25,11 @@
 			</tr>
 			<tr>
 				<td><label>Data:</label></td>
-				<td><input type="text" name="data_consulta" class="form-control"></td>
+				<td><input type="date" name="data_consulta" class="form-control"></td>
 			</tr>
 			<tr>
 				<td><label>Horário:</label></td>
-				<td><input type="text" name="hora" class="form-control"></td>
+				<td><input type="time" name="hora" class="form-control"></td>
 			</tr>			
 			<tr>
 				<td></td>

@@ -4,7 +4,7 @@
 </tr>
 <tr>
 	<td><label>Nome:</label></td>
-	<td width="80%"><input type="text" name="nome" class="form-control" value="<?=$paciente['nome']?>"></td>
+	<td width="80%"><input type="text" name="nome" class="form-control" required value="<?=$paciente['nome']?>"></td>
 </tr>
 <tr>
 	<td><label>Idade:</label></td>

@@ -10,7 +10,6 @@
 	} else {
 		$atendida = "";
 	}
-
 ?>
 
 <h1>Alterar Dados da Consulta</h1>
@@ -27,11 +26,11 @@
 			</tr>
 			<tr>
 				<td><label>Data:</label></td>
-				<td><input type="text" name="data_consulta" class="form-control" value="<?=$consulta['data_consulta']?>"></td>
+				<td><input type="date" name="data_consulta" class="form-control" value="<?=$consulta['data_consulta']?>"></td>
 			</tr>
 			<tr>
 				<td><label>Horário:</label></td>
-				<td><input type="text" name="hora" class="form-control" value="<?=$consulta['hora']?>"></td>
+				<td><input type="time" name="hora" class="form-control" value="<?=$consulta['hora']?>"></td>
 			</tr>
 			<tr>
 				<td><label>Consulta Atendida:</label></td>
@@ -39,7 +38,7 @@
 			</tr>
 			<tr>
 				<td><label>Observações:</label></td>
-				<td><textarea name="observacao" class="form-control" text="<?=$consulta['observacao']?>"></textarea></td>
+				<td><textarea name="observacao" class="form-control" text="<?=$consulta['observacao']?>"> <?=$consulta['observacao']?> </textarea></td>
 			</tr>
 			<tr>
 				<td></td>

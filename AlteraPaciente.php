@@ -21,7 +21,7 @@
 		}
 		
 		alteraPaciente($conexao, $id_paciente, $nome, $idade, $id_estado, $ativo, $email, $telefone, $endereco, $numero, $sexo);
-    	$_SESSION['success'] = "Produto alterado com sucesso.";
+    	$_SESSION['success'] = "Paciente alterado com sucesso.";
     	header("Location:ListaPaciente.php");
     	die();
 		

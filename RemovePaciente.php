@@ -4,7 +4,7 @@
       
     verificaUsuario();
 
-    $id_paciente = $_POST['id_paciente'];
+    $id_paciente = $_GET['id_paciente'];
     removePaciente($conexao, $id_paciente);
     $_SESSION['success'] = "Paciente removido com sucesso.";
 

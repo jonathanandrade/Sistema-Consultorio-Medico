@@ -4,7 +4,8 @@
 
       verificaUsuario();  ?>
 
-<table class="table table-striped table-bordered">
+<h1>Lista de Pacientes</h1>
+<table class="table table-striped table-responsive">
 <th>CÓDIGO</th>
 <th>NOME</th>
 <th>IDADE</th>
@@ -14,9 +15,7 @@
 <th>ENDEREÇO</th>
 <th>NUM</th>
 <th>UF</th>
-<th>CONSULTA</th>
-<th>#</th>
-<th>#</th>
+<th>FUNÇÕES</th>
 	<?php
 		$pacientes = listaPacientes($conexao);	
 		foreach($pacientes as $paciente) {
@@ -30,15 +29,14 @@
 			<td><?= $paciente['telefone'] ?> </td>
 			<td><?= $paciente['endereco'] ?> </td>
 			<td><?= $paciente['numero'] ?> </td>
-			<td><?= $paciente['sigla'] ?> </td>
-			<td><a href="CadastroConsulta.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-warning">Consulta</a> </td>
-			<td><a href="AlteraPacienteFormulario.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-primary">Alterar</a></td>
-			<td>
-				<form action="RemovePaciente.php" method="post">
-					<input type="hidden" name="id_paciente" value="<?=$paciente['id_paciente']?>">
-					<button class="btn btn-danger">Remover</a>					
-				</form>
-			</td>	
+			<td><?= $paciente['sigla'] ?> </td>			
+			<td width="30%">
+				<a href="CadastroConsulta.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-warning">Consulta</a>
+				<a href="AlteraPacienteFormulario.php?id_paciente=<?=$paciente['id_paciente']?>" class="btn btn-primary">Alterar</a>
+				<a href="#"
+				   onclick="javascript: if(confirm('Deseja realmente excluir ?'))
+				   				location.href='RemovePaciente.php?id_paciente=<?php echo $paciente['id_paciente'];?>'" class="btn btn-danger">Excluir</a>
+			</td>
 		</tr>
 	<?php
 		}

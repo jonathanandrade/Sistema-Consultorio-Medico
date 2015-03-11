@@ -8,7 +8,6 @@
 	  $estados = listaEstados($conexao);	  
 
 	  $ativo = $paciente['ativo'] ? "checked='checked'" : "";
-
 ?>
 
 	<h1>Alterar Paciente</h1>

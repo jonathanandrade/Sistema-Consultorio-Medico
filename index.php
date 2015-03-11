@@ -24,4 +24,10 @@
     </div>
     <?php } ?>
 
+    <?php if(usuarioEstaLogado()) { ?>
+        <div>
+            <img src="images/home_logo.png"/>
+        </div>
+    <?php } ?>
+
 <?php include('rodape.php') ?>

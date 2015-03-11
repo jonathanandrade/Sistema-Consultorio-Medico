@@ -1,5 +1,5 @@
 <?php
-	
+	// Contem todas as funções relacionadas a sessão
 	session_start();
 
 	function usuarioEstaLogado() {
